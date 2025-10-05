@@ -1,12 +1,13 @@
 <script setup>
 defineProps({
   label: String,
+  number: Number
 });
 </script>
 <template>
   <div class="segment">
     <div class="number-wrapper">
-      <span class="number">0</span>
+      <span class="number">{{ number }}</span>
     </div>
     <span class="block pt-2 label">{{ label }}</span>
   </div>
